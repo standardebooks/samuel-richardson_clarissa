@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1400 540">
-	<title>The titlepage for the Standard Ebooks edition of Clarissa Harlowe, or the History of a Young Lady, by Samuel Richardson</title>
-	<style type="text/css"> text{ font-family: League Spartan; letter-spacing: 5px; text-anchor: middle; } .title{ font-size: 93.56725311px; } .author{ font-size: 70.17543793px; } </style>
-	<text class="title" x="700" y="130">CLARISSA HARLOWE,</text>
-	<text class="title" x="700" y="230">OR THE HISTORY</text>
-	<text class="title" x="700" y="330">OF A YOUNG LADY</text>
-	<text class="author" x="700" y="490">SAMUEL RICHARDSON</text>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1400 340">
+	<title>The titlepage for the Standard Ebooks edition of Clarissa Harlowe, by Samuel Richardson</title>
+	<style type="text/css">
+		text{
+			font-family: League Spartan;
+			letter-spacing: 5px;
+			text-anchor: middle;
+		}
+
+		.title{
+			font-size: 93.56725311px;
+		}
+
+		.author{
+			font-size: 70.17543793px;
+		}
+	</style>
+	<text class="title" x="700" y="130">CLARISSA HARLOWE</text>
+	<text class="author" x="700" y="290">SAMUEL RICHARDSON</text>
 </svg>
