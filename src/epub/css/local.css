@@ -5,3 +5,54 @@
 	text-align: center;
 	font-style: italic;
 }
+
+b{
+	font-weight: normal;
+	font-variant: small-caps;
+}
+
+strong{
+	font-style: italic;
+	font-variant: small-caps;
+}
+
+span[epub|type~="subtitle"]{
+	display: block;
+	font-weight: normal;
+}
+
+[epub|type~="se:letter.dateline"]{
+	margin-top: 1em;
+	text-align: right;
+}
+
+[epub|type~="z3998:letter"] header{
+	margin-bottom: 1em;
+}
+
+[epub|type~="z3998:letter"] footer{
+	margin-top: 1em;
+}
+
+[epub|type~="z3998:salutation"],
+[epub|type~="z3998:recipient"]{
+	font-variant: small-caps;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:valediction"]{
+	text-align: right;
+}
+
+[epub|type~="z3998:sender"]{
+	font-variant: small-caps;
+	text-align: right;
+}
+
+[epub|type~="z3998:postscript"]{
+	margin-top: 1em;
+}
+
+.signature{
+	font-variant: small-caps;
+}
