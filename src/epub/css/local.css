@@ -26,6 +26,11 @@ span[epub|type~="subtitle"]{
 	text-align: right;
 }
 
+[epub|type~="z3998:letter"]{
+	margin-left: 0;
+	margin-right: 0;
+}
+
 [epub|type~="z3998:letter"] header{
 	margin-bottom: 1em;
 }
@@ -51,8 +56,40 @@ span[epub|type~="subtitle"]{
 
 [epub|type~="z3998:postscript"]{
 	margin-top: 1em;
+	text-indent: 0;
 }
 
 .signature{
 	font-variant: small-caps;
+}
+
+[epub|type~="z3998:verse"] p{
+	text-align: left;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:verse"] p > span{
+	display: block;
+	text-indent: -1em;
+	padding-left: 1em;
+}
+
+[epub|type~="z3998:verse"] p > span + br{
+	display: none;
+}
+
+p span.i1{
+	padding-left: 2em;
+}
+
+.aside{
+	font-style: italic;
+}
+
+.aside::before{
+	content: "[";
+}
+
+.aside::after{
+	content: "]";
 }
