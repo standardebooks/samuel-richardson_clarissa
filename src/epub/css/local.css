@@ -6,13 +6,21 @@
 	font-style: italic;
 }
 
+.letter-reference::before{
+	content: "[";
+}
+
+.letter-reference::after{
+	content: "]";
+}
+
 b{
 	font-weight: normal;
 	font-variant: small-caps;
 }
 
 strong{
-	font-style: italic;
+	font-weight: normal;
 	font-variant: small-caps;
 }
 
@@ -21,9 +29,15 @@ span[epub|type~="subtitle"]{
 	font-weight: normal;
 }
 
+.addressee{
+	text-align: center;
+	font-style: italic;
+}
+
 [epub|type~="se:letter.dateline"]{
 	margin-top: 1em;
 	text-align: right;
+	font-style: italic;
 }
 
 [epub|type~="z3998:letter"]{
@@ -32,31 +46,48 @@ span[epub|type~="subtitle"]{
 }
 
 [epub|type~="z3998:letter"] header{
-	margin-bottom: 1em;
+	text-align: right;
+	margin-bottom: 0.5em;
 }
 
-[epub|type~="z3998:letter"] footer{
-	margin-top: 1em;
+blockquote[epub|type~="z3998:letter"] blockquote[epub|type~="z3998:letter"]{
+	margin-left: 1em;
 }
 
-[epub|type~="z3998:salutation"],
-[epub|type~="z3998:recipient"]{
-	font-variant: small-caps;
+blockquote[epub|type~="z3998:letter"] blockquote[epub|type~="z3998:letter"] blockquote[epub|type~="z3998:letter"]{
+	margin-left: 2em;
+}
+
+footer{
+	margin-top: 0.5em;
+	text-align: right;
+}
+
+[epub|type~="z3998:salutation"] + p,
+[epub|type~="z3998:letter"] header + p{
 	text-indent: 0;
 }
 
-[epub|type~="z3998:valediction"]{
-	text-align: right;
+[epub|type~="z3998:salutation"]{
+	text-align: left;
+	text-indent: 0;
 }
 
-[epub|type~="z3998:sender"]{
+[epub|type~="z3998:sender"],
+[epub|type~="z3998:recipient"],
+[epub|type~="z3998:salutation"]{
 	font-variant: small-caps;
-	text-align: right;
 }
 
 [epub|type~="z3998:postscript"]{
-	margin-top: 1em;
 	text-indent: 0;
+	text-align: left;
+}
+
+/* this is to handle multi-paragraph postscripts */
+[epub|type~="z3998:postscript"]:nth-child(n+2){
+	text-indent: 1em;
+	text-align: left;
 }
 
 .signature{
@@ -80,6 +111,19 @@ span[epub|type~="subtitle"]{
 
 p span.i1{
 	padding-left: 2em;
+}
+
+.letter-reference{
+	font-style: italic;
+	text-align: center;
+}
+
+.letter-reference::before{
+	content: "[";
+}
+
+.letter-reference::after{
+	content: "]";
 }
 
 .aside{
