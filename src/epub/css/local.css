@@ -1,22 +1,70 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
-.letter-reference{
-	text-align: center;
+header{
+	text-align: center; /* font-variant: small-caps; */
+}
+
+i em{
+	font-style: normal;
+}
+
+em em{
+	font-style: normal;
+}
+
+i i{
+	font-style: normal;
+}
+
+em strong{
+	font-style: normal;
+}
+
+q{
 	font-style: italic;
 }
 
-.letter-reference::before{
+q em{
+	font-style: normal;
+}
+
+/* only for debugging purposes -- remove next two selectors */
+q:before{
+	content: "«";
+}
+
+q:after{
+	content: "»";
+}
+
+/* text briefly explaining something about a letter */
+.explanatory{
+	font-style: italic;
+	text-align: center;
+}
+
+p.explanatory:before{
 	content: "[";
 }
 
-.letter-reference::after{
+p.explanatory:after{
 	content: "]";
 }
 
-b{
-	font-weight: normal;
-	font-variant: small-caps;
+.abstract{
+	font-style: italic;
+	text-indent: 0;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+.abstract:before{
+	content: "[";
+}
+
+.abstract:after{
+	content: "]";
 }
 
 strong{
@@ -29,15 +77,11 @@ span[epub|type~="subtitle"]{
 	font-weight: normal;
 }
 
-.addressee{
-	text-align: center;
-	font-style: italic;
-}
-
 [epub|type~="se:letter.dateline"]{
 	margin-top: 1em;
 	text-align: right;
 	font-style: italic;
+	font-variant: normal;
 }
 
 [epub|type~="z3998:letter"]{
@@ -48,14 +92,6 @@ span[epub|type~="subtitle"]{
 [epub|type~="z3998:letter"] header{
 	text-align: right;
 	margin-bottom: 0.5em;
-}
-
-blockquote[epub|type~="z3998:letter"] blockquote[epub|type~="z3998:letter"]{
-	margin-left: 1em;
-}
-
-blockquote[epub|type~="z3998:letter"] blockquote[epub|type~="z3998:letter"] blockquote[epub|type~="z3998:letter"]{
-	margin-left: 2em;
 }
 
 footer{
@@ -79,13 +115,26 @@ footer{
 	font-variant: small-caps;
 }
 
+/* This is to match the source, where letters are often headed like TO CLARY HARLOWE and centered */
+p[epub|type~="z3998:recipient"]{
+	text-align: center;
+}
+
 [epub|type~="z3998:postscript"]{
+	margin-top: 1em;
 	text-indent: 0;
 	text-align: left;
 }
 
 /* this is to handle multi-paragraph postscripts */
-[epub|type~="z3998:postscript"]:nth-child(n+2){
+div[epub|type~="z3998:postscript"]{
+	margin-top: 1em;
+	text-indent: 0;
+	text-align: left;
+}
+
+div[epub|type~="z3998:postscript"]:nth-child(n+2){
+	margin-top: 0;
 	text-indent: 1em;
 	text-align: left;
 }
@@ -94,46 +143,43 @@ footer{
 	font-variant: small-caps;
 }
 
+[epub|type~="z3998:poem"] p,
 [epub|type~="z3998:verse"] p{
 	text-align: left;
 	text-indent: 0;
 }
 
+[epub|type~="z3998:poem"] p > span,
 [epub|type~="z3998:verse"] p > span{
 	display: block;
 	text-indent: -1em;
 	padding-left: 1em;
 }
 
+[epub|type~="z3998:poem"] p > span + br,
 [epub|type~="z3998:verse"] p > span + br{
 	display: none;
+}
+
+[epub|type~="z3998:poem"] header p,
+[epub|type~="z3998:verse"] header p{
+	text-align: center;
+	text-indent: 0;
+	font-variant: small-caps;
+}
+
+[epub|type~="z3998:poem"] p.stanza-number{
+	margin-top: 0.5em;
+	text-align: center;
+	text-indent: 0;
+	font-variant: small-caps;
 }
 
 p span.i1{
 	padding-left: 2em;
 }
 
-.letter-reference{
-	font-style: italic;
-	text-align: center;
-}
-
-.letter-reference::before{
-	content: "[";
-}
-
-.letter-reference::after{
-	content: "]";
-}
-
-.aside{
-	font-style: italic;
-}
-
-.aside::before{
-	content: "[";
-}
-
-.aside::after{
-	content: "]";
+/* for debugging purposes -- remove */
+.footnote{
+	color: red;
 }
