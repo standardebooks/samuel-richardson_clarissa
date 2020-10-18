@@ -2,9 +2,13 @@
 @namespace epub "http://www.idpf.org/2007/ops";
 
 header{
-	text-align: center; /* font-variant: small-caps; */
+	font-variant: small-caps;
+	margin: 1em;
+	text-align: center;
 }
 
+/* There is a LOT of emphasis in this book, and many types (i, em, q, strong).
+Many such are nested, hence the need for the following selectors */
 i em{
 	font-style: normal;
 }
@@ -26,6 +30,10 @@ q{
 }
 
 q em{
+	font-style: normal;
+}
+
+q strong{
 	font-style: normal;
 }
 
@@ -89,6 +97,12 @@ span[epub|type~="subtitle"]{
 	margin-right: 0;
 }
 
+/* letters are nested within letters! */
+[epub|type~="z3998:letter"] [epub|type~="z3998:letter"]{
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
 [epub|type~="z3998:letter"] header{
 	text-align: right;
 	margin-bottom: 0.5em;
@@ -107,9 +121,11 @@ footer{
 [epub|type~="z3998:salutation"]{
 	text-align: left;
 	text-indent: 0;
+	padding: 0;
 }
 
 [epub|type~="z3998:sender"],
+[epub|type~="z3998:signature"],
 [epub|type~="z3998:recipient"],
 [epub|type~="z3998:salutation"]{
 	font-variant: small-caps;
@@ -179,7 +195,50 @@ p span.i1{
 	padding-left: 2em;
 }
 
+/* these are for drama-like passages */
+[epub|type~="z3998:scene"] header,
+[epub|type~="z3998:stage-direction"] header,
+[epub|type~="z3998:stage-direction"] p{
+	text-align: center;
+	text-indent: 0;
+	font-variant: small-caps;
+}
+
+[epub|type~="z3998:stage-direction"]{
+	font-style: italic;
+	text-align: center;
+	text-indent: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+[epub|type~="z3998:stage-direction"]::before{
+	content: "(";
+	font-style: normal;
+}
+
+[epub|type~="z3998:stage-direction"]::after{
+	content: ")";
+	font-style: normal;
+}
+
+[epub|type~="z3998:persona"]{
+	font-variant: all-small-caps;
+	font-style: normal; /* This avoids character names being italicised within a stage direction */
+}
+
 /* for debugging purposes -- remove */
 .footnote{
 	color: red;
+}
+
+/* This is for the indices (pointing fingers) in chap 5-20. Thanks to Robin Whittleton for this solution. */
+blockquote.margined p{
+	margin-left: 4em;
+	position: relative;
+}
+
+.manicule{
+	position: absolute;
+	left: -3em;
 }
