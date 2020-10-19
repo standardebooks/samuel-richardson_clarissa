@@ -242,3 +242,9 @@ blockquote.margined p{
 	position: absolute;
 	left: -3em;
 }
+
+/* this is for chapter 5-30 where Lovelace has in part forged a letter from Miss Howe and has indicated to Belford that he has underscored the parts he has written himself */
+.forged{
+	text-decoration: underline;
+	text-decoration-style: solid;
+}
