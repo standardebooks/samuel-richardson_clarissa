@@ -52,10 +52,25 @@ q:after{
 	text-align: center;
 }
 
+.letter-header{
+	text-align: center;
+	text-indent: 0;
+	font-variant: small-caps;
+}
+
+/* these are for the torn-up letters in 6-16 */
+aside{
+	width: 50%;
+	float: right;
+}
+/* end torn-up letters */
+
+span.explanatory:before,
 p.explanatory:before{
 	content: "[";
 }
 
+span.explanatory:after,
 p.explanatory:after{
 	content: "]";
 }
@@ -65,14 +80,6 @@ p.explanatory:after{
 	text-indent: 0;
 	margin-top: 0.25em;
 	margin-bottom: 0.25em;
-}
-
-.abstract:before{
-	content: "[";
-}
-
-.abstract:after{
-	content: "]";
 }
 
 strong{
@@ -132,8 +139,9 @@ footer{
 }
 
 /* This is to match the source, where letters are often headed like TO CLARY HARLOWE and centered */
-p[epub|type~="z3998:recipient"]{
+.letter-header{
 	text-align: center;
+	font-variant: small-caps;
 }
 
 [epub|type~="z3998:postscript"]{
@@ -212,16 +220,6 @@ p span.i1{
 	margin-bottom: 0.5em;
 }
 
-[epub|type~="z3998:stage-direction"]::before{
-	content: "(";
-	font-style: normal;
-}
-
-[epub|type~="z3998:stage-direction"]::after{
-	content: ")";
-	font-style: normal;
-}
-
 [epub|type~="z3998:persona"]{
 	font-variant: all-small-caps;
 	font-style: normal; /* This avoids character names being italicised within a stage direction */
@@ -247,4 +245,23 @@ blockquote.margined p{
 .forged{
 	text-decoration: underline;
 	text-decoration-style: solid;
+}
+
+/* one line paragraph in page source is centered for emphasis */
+#chapter-7-5 div{
+	text-align: center;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+/* for MEDITATIONS in chapters 7-46 and 7-81 */
+blockquote.meditation p{
+	font-style: italic;
+	text-indent: 0;
+}
+
+blockquote.meditation header p{
+	text-align: center;
+	font-style: normal;
+	font-variant: none;
 }
