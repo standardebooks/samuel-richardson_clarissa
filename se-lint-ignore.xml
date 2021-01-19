@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se-lint-ignore>
+	<file path="*.xhtml">
+		<ignore>
+			<code>c-021</code>
+			<reason>Throwing a manual review of italics for no reason.</reason>
+		</ignore>
+	</file>
+	<file path="chapter-*.xhtml">
+		<ignore>
+			<code>s-023</code>
+			<reason>Use of abbreviated names like Lord M. or Cl. in chapter titles cause spurious titlecasing errors. It's safe to turn this off globally because the only titlecase warnings are these spurious ones.</reason>
+		</ignore>
+	</file>
+</se-lint-ignore>

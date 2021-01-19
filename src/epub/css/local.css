@@ -1,5 +1,6 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
+@namespace xml "http://www.w3.org/XML/1998/namespace";
 
 header{
 	font-variant: small-caps;
@@ -9,15 +10,7 @@ header{
 
 /* There is a LOT of emphasis in this book, and many types (i, em, q, strong).
 Many such are nested, hence the need for the following selectors */
-i em{
-	font-style: normal;
-}
-
 em em{
-	font-style: normal;
-}
-
-i i{
 	font-style: normal;
 }
 
@@ -37,21 +30,23 @@ q strong{
 	font-style: normal;
 }
 
-/* only for debugging purposes -- remove next two selectors */
+/* removes quotes some browsers might add */
 q:before{
-	content: "«";
+	content: "";
 }
 
 q:after{
-	content: "»";
+	content: "";
 }
 
 /* text briefly explaining something about a letter */
 .explanatory{
 	font-style: italic;
 	text-align: center;
+	text-indent: 0;
 }
 
+/* Many letters are described in centered all-caps like TO MY UNFORTUNATE SISTER */
 .letter-header{
 	text-align: center;
 	text-indent: 0;
@@ -63,33 +58,27 @@ aside{
 	width: 50%;
 	float: right;
 }
+
+aside blockquote{
+	margin-top: 0.5em;
+}
+
+aside p.explanatory{
+	text-align: initial;
+	text-indent: 2em;
+}
 /* end torn-up letters */
-
-span.explanatory:before,
-p.explanatory:before{
-	content: "[";
-}
-
-span.explanatory:after,
-p.explanatory:after{
-	content: "]";
-}
 
 .abstract{
 	font-style: italic;
 	text-indent: 0;
-	margin-top: 0.25em;
-	margin-bottom: 0.25em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 strong{
 	font-weight: normal;
 	font-variant: small-caps;
-}
-
-span[epub|type~="subtitle"]{
-	display: block;
-	font-weight: normal;
 }
 
 [epub|type~="se:letter.dateline"]{
@@ -116,7 +105,7 @@ span[epub|type~="subtitle"]{
 }
 
 footer{
-	margin-top: 0.5em;
+	margin-top: 1em;
 	text-align: right;
 }
 
@@ -126,7 +115,7 @@ footer{
 }
 
 [epub|type~="z3998:salutation"]{
-	text-align: left;
+	text-align: initial;
 	text-indent: 0;
 	padding: 0;
 }
@@ -138,38 +127,15 @@ footer{
 	font-variant: small-caps;
 }
 
-/* This is to match the source, where letters are often headed like TO CLARY HARLOWE and centered */
-.letter-header{
-	text-align: center;
-	font-variant: small-caps;
-}
-
 [epub|type~="z3998:postscript"]{
 	margin-top: 1em;
 	text-indent: 0;
-	text-align: left;
-}
-
-/* this is to handle multi-paragraph postscripts */
-div[epub|type~="z3998:postscript"]{
-	margin-top: 1em;
-	text-indent: 0;
-	text-align: left;
-}
-
-div[epub|type~="z3998:postscript"]:nth-child(n+2){
-	margin-top: 0;
-	text-indent: 1em;
-	text-align: left;
-}
-
-.signature{
-	font-variant: small-caps;
+	text-align: initial;
 }
 
 [epub|type~="z3998:poem"] p,
 [epub|type~="z3998:verse"] p{
-	text-align: left;
+	text-align: initial;
 	text-indent: 0;
 }
 
@@ -185,33 +151,38 @@ div[epub|type~="z3998:postscript"]:nth-child(n+2){
 	display: none;
 }
 
-[epub|type~="z3998:poem"] header p,
-[epub|type~="z3998:verse"] header p{
+/* [epub|type~="z3998:verse"] header p{
 	text-align: center;
 	text-indent: 0;
 	font-variant: small-caps;
-}
-
-[epub|type~="z3998:poem"] p.stanza-number{
-	margin-top: 0.5em;
-	text-align: center;
-	text-indent: 0;
-	font-variant: small-caps;
-}
-
+} */
 p span.i1{
 	padding-left: 2em;
 }
 
+p span.i2{
+	padding-left: 4em;
+}
+
+p span.i3{
+	padding-left: 6em;
+}
+
+cite{
+	font-variant: small-caps;
+}
+
+body [xml|lang]{
+	font-style: italic;
+}
+
 /* these are for drama-like passages */
-[epub|type~="z3998:scene"] header,
-[epub|type~="z3998:stage-direction"] header,
+/* [epub|type~="z3998:stage-direction"] header,
 [epub|type~="z3998:stage-direction"] p{
 	text-align: center;
 	text-indent: 0;
 	font-variant: small-caps;
-}
-
+} */
 [epub|type~="z3998:stage-direction"]{
 	font-style: italic;
 	text-align: center;
@@ -231,7 +202,7 @@ p span.i1{
 }
 
 /* This is for the indices (pointing fingers) in chap 5-20. Thanks to Robin Whittleton for this solution. */
-blockquote.margined p{
+#chapter-5-20 blockquote blockquote:nth-of-type(1) p{
 	margin-left: 4em;
 	position: relative;
 }
@@ -241,27 +212,86 @@ blockquote.margined p{
 	left: -3em;
 }
 
+table{
+	margin: 1em auto 1em auto;
+}
+
+/* drama-like table in chapter 2-34 */
+#chapter-2-34 table{
+	margin: 0 0 0 0.5em;
+}
+
+#chapter-2-34 table td:nth-of-type(2){
+	border-left: solid thin;
+	padding-left: 0.5em;
+}
+
 /* this is for chapter 5-30 where Lovelace has in part forged a letter from Miss Howe and has indicated to Belford that he has underscored the parts he has written himself */
 .forged{
 	text-decoration: underline;
 	text-decoration-style: solid;
 }
 
-/* one line paragraph in page source is centered for emphasis */
-#chapter-7-5 div{
+/* one line paragraph in page source is centered for emphasis, but is not a blockquote */
+#chapter-7-5 div,
+#chapter-8-16 div{
 	text-align: center;
-	margin-top: 0.25em;
-	margin-bottom: 0.25em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-style: italic;
 }
 
-/* for MEDITATIONS in chapters 7-46 and 7-81 */
+#conclusion blockquote:nth-of-type(2) p{
+	text-align: center;
+	text-indent: 0;
+	font-variant: small-caps;
+}
+
+/* for plaque on Clarissa's coffin */
+#chapter-8-48 blockquote blockquote:nth-of-type(1) p{
+	text-align: center;
+	text-indent: 0;
+}
+
+/* for Clarissa's MEDITATIONS in several chapters, eg. 7-46 and 7-81 */
 blockquote.meditation p{
 	font-style: italic;
 	text-indent: 0;
 }
 
 blockquote.meditation header p{
+	text-indent: 0;
 	text-align: center;
 	font-style: normal;
 	font-variant: none;
+}
+
+/* These are for a list of Col. Morden's reasons in chapter 9-45 to better match the page scans */
+#chapter-9-45 ul{
+	list-style-type: none;
+}
+
+#chapter-9-45 li{
+	margin-top: 0.5em;
+}
+
+#chapter-9-45 li p{
+	text-indent: -0.5em;
+}
+
+/* These are for a list of Clarissa's activities in chapter 9-55, to better match the layout in the page scans */
+#chapter-9-45 ul,
+#chapter-9-55 ul{
+	list-style-type: none;
+}
+
+#chapter-9-45 li,
+#chapter-9-55 li{
+	margin-top: 0.5em;
+}
+
+#chapter-9-55 li p:first-child{
+	text-align: center;
+	text-indent: 0;
+	margin-bottom: 0.5em;
 }
