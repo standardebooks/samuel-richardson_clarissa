@@ -43,12 +43,19 @@
 		<dc:subject id="subject-6">Young women -- Crimes against -- Fiction</dc:subject>
 		<dc:subject id="subject-7">Rape victims -- Fiction</dc:subject>
 		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">Unknown</meta>
 		<meta property="authority" refines="#subject-2">LCSH</meta>
+		<meta property="term" refines="#subject-2">sh85108438</meta>
 		<meta property="authority" refines="#subject-3">LCSH</meta>
+		<meta property="term" refines="#subject-3">sh85044453</meta>
 		<meta property="authority" refines="#subject-4">LCSH</meta>
+		<meta property="term" refines="#subject-4">sh2008100117</meta>
 		<meta property="authority" refines="#subject-5">LCSH</meta>
+		<meta property="term" refines="#subject-5">sh2008106304</meta>
 		<meta property="authority" refines="#subject-6">LCSH</meta>
+		<meta property="term" refines="#subject-6">sh2008114025</meta>
 		<meta property="authority" refines="#subject-7">LCSH</meta>
+		<meta property="term" refines="#subject-7">sh2008110359</meta>
 		<meta property="se:subject">Fiction</meta>
 		<dc:description id="description">A beautiful and virtuous young lady is entangled in the snares of a handsome but unscrupulous rake.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
