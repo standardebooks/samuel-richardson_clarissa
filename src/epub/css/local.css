@@ -53,6 +53,7 @@ q:after{
 .explanatory{
 	font-style: italic;
 	text-align: center;
+	text-indent: 0;
 	margin-bottom: 0.5em;
 }
 
@@ -172,10 +173,6 @@ p[epub|type~="z3998:postscript"],
 	text-indent: -1em;
 }
 
-div[epub|type~="z3998:postscript"] header{
-	text-align: center;
-}
-
 [epub|type~="z3998:poem"] p,
 [epub|type~="z3998:verse"] p{
 	text-align: initial;
@@ -221,10 +218,6 @@ cite{
 	text-align: justify;
 	text-indent: 0;
 	font-variant: none;
-}
-
-[epub|type~="bridgehead"] i{
-	font-style: normal;
 }
 
 body [xml|lang]{
@@ -281,7 +274,6 @@ td{
 }
 
 /* one line paragraph in page source, centered for emphasis, but is not a blockquote */
-#chapter-1-30 div,
 #chapter-2-10 div,
 #chapter-7-5 div,
 #chapter-8-16 div{
