@@ -8,6 +8,16 @@ header{
 	text-align: center;
 }
 
+/* paras following letters within letters should start left-aligned */
+blockquote blockquote + p{
+	text-indent: 0;
+}
+
+/* headers within blockquotes which are NOT themselves letters should be centered */
+blockquote blockquote header p{
+	text-align: center;
+}
+
 /* There is a LOT of emphasis in this book, and many types (i, em, q, strong).
 Many such are nested, hence the need for the following selectors */
 em em{
@@ -43,17 +53,18 @@ q:after{
 .explanatory{
 	font-style: italic;
 	text-align: center;
-	text-indent: 0;
+	margin-bottom: 0.5em;
 }
 
 /* Many letters are described in centered all-caps like TO MY UNFORTUNATE SISTER */
-.letter-header{
+p.letter-header{
 	text-align: center;
 	text-indent: 0;
 	font-variant: small-caps;
+	margin-bottom: 0.5em;
 }
 
-/* these are for the torn-up letters in 6-16 */
+/* these are for the hysterical letters in 6-16 */
 aside{
 	width: 50%;
 	float: right;
@@ -69,11 +80,27 @@ aside p.explanatory{
 }
 /* end torn-up letters */
 
+/* abstracts are short summaries of letters or parts of letters */
 .abstract{
 	font-style: italic;
-	text-indent: 0;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
+}
+
+/* This is to match unusual but consistently used reverse indent of abstract passages in the page scans */
+p.abstract,
+div.abstract p{
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+.abstract em,
+.abstract q{
+	font-style: normal;
+}
+
+p.abstract + p{
+	text-indent: 0;
 }
 
 strong{
@@ -82,10 +109,15 @@ strong{
 }
 
 [epub|type~="se:letter.dateline"]{
-	margin-top: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 	text-align: right;
 	font-style: italic;
 	font-variant: normal;
+}
+
+[epub|type~="se:letter.dateline"] + p{
+	text-indent: 0;
 }
 
 [epub|type~="z3998:letter"]{
@@ -129,14 +161,29 @@ footer{
 
 [epub|type~="z3998:postscript"]{
 	margin-top: 1em;
-	text-indent: 0;
 	text-align: initial;
+	text-indent: 0;
+}
+
+/* This is to match unusual but consistently used reverse indent of postscripts in the page scans */
+p[epub|type~="z3998:postscript"],
+[epub|type~="z3998:postscript"] p{
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+div[epub|type~="z3998:postscript"] header{
+	text-align: center;
 }
 
 [epub|type~="z3998:poem"] p,
 [epub|type~="z3998:verse"] p{
 	text-align: initial;
 	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] p + p{
+	margin-top: 1em;
 }
 
 [epub|type~="z3998:poem"] p > span,
@@ -151,11 +198,6 @@ footer{
 	display: none;
 }
 
-/* [epub|type~="z3998:verse"] header p{
-	text-align: center;
-	text-indent: 0;
-	font-variant: small-caps;
-} */
 p span.i1{
 	padding-left: 2em;
 }
@@ -172,17 +214,24 @@ cite{
 	font-variant: small-caps;
 }
 
+[epub|type~="bridgehead"]{
+	display: inline-block;
+	font-style: italic;
+	max-width: 60%;
+	text-align: justify;
+	text-indent: 0;
+	font-variant: none;
+}
+
+[epub|type~="bridgehead"] i{
+	font-style: normal;
+}
+
 body [xml|lang]{
 	font-style: italic;
 }
 
 /* these are for drama-like passages */
-/* [epub|type~="z3998:stage-direction"] header,
-[epub|type~="z3998:stage-direction"] p{
-	text-align: center;
-	text-indent: 0;
-	font-variant: small-caps;
-} */
 [epub|type~="z3998:stage-direction"]{
 	font-style: italic;
 	text-align: center;
@@ -194,11 +243,6 @@ body [xml|lang]{
 [epub|type~="z3998:persona"]{
 	font-variant: all-small-caps;
 	font-style: normal; /* This avoids character names being italicised within a stage direction */
-}
-
-/* for debugging purposes -- remove */
-.footnote{
-	color: red;
 }
 
 /* This is for the indices (pointing fingers) in chap 5-20. Thanks to Robin Whittleton for this solution. */
@@ -214,6 +258,10 @@ body [xml|lang]{
 
 table{
 	margin: 1em auto 1em auto;
+}
+
+td{
+	vertical-align: top;
 }
 
 /* drama-like table in chapter 2-34 */
@@ -232,7 +280,9 @@ table{
 	text-decoration-style: solid;
 }
 
-/* one line paragraph in page source is centered for emphasis, but is not a blockquote */
+/* one line paragraph in page source, centered for emphasis, but is not a blockquote */
+#chapter-1-30 div,
+#chapter-2-10 div,
 #chapter-7-5 div,
 #chapter-8-16 div{
 	text-align: center;
@@ -256,27 +306,27 @@ table{
 /* for Clarissa's MEDITATIONS in several chapters, eg. 7-46 and 7-81 */
 blockquote.meditation p{
 	font-style: italic;
-	text-indent: 0;
 }
 
 blockquote.meditation header p{
 	text-indent: 0;
 	text-align: center;
 	font-style: normal;
+}
+
+blockquote.meditation header p:nth-of-type(2){
 	font-variant: none;
 }
 
-/* These are for a list of Col. Morden's reasons in chapter 9-45 to better match the page scans */
+/* These are for lists of points in chapters 9-41 and 9-45 to better match the page scans */
+#chapter-9-41 ul,
 #chapter-9-45 ul{
 	list-style-type: none;
 }
 
-#chapter-9-45 li{
-	margin-top: 0.5em;
-}
-
+#chapter-9-41 li p,
 #chapter-9-45 li p{
-	text-indent: -0.5em;
+	text-indent: -1em;
 }
 
 /* These are for a list of Clarissa's activities in chapter 9-55, to better match the layout in the page scans */
