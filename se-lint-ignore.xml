@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <se-lint-ignore>
-	<file path="*.xhtml">
-		<ignore>
-			<code>c-021</code>
-			<reason>Throwing a manual review of italics for no reason.</reason>
-		</ignore>
-	</file>
-	<file path="chapter-*.xhtml">
-		<ignore>
-			<code>c-018</code>
-			<reason>Postscripts for this work use a customised styling so text-indent: 0 is not relevant.</reason>
-		</ignore>
-	</file>
 	<file path="chapter-*.xhtml">
 		<ignore>
 			<code>s-023</code>

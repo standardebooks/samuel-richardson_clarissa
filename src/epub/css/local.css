@@ -5,8 +5,8 @@
 header{
 	font-variant: small-caps;
 	margin: 1em 0 1em 0;
-	text-align: center;
 }
+
 
 /* paras following letters within letters should start left-aligned */
 blockquote blockquote + p{
@@ -20,9 +20,6 @@ blockquote blockquote header p{
 
 /* There is a LOT of emphasis in this book, and many types (i, em, q, strong).
 Many such are nested, hence the need for the following selectors */
-em em{
-	font-style: normal;
-}
 
 em strong{
 	font-style: normal;
@@ -40,15 +37,6 @@ q strong{
 	font-style: normal;
 }
 
-/* removes quotes some browsers might add */
-q:before{
-	content: "";
-}
-
-q:after{
-	content: "";
-}
-
 /* text briefly explaining something about a letter */
 .explanatory{
 	font-style: italic;
@@ -57,12 +45,16 @@ q:after{
 	margin-bottom: 0.5em;
 }
 
-/* Many letters are described in centered all-caps like TO MY UNFORTUNATE SISTER */
+/* Many letters are described by centered all-caps like TO MY UNFORTUNATE SISTER. Note that while MOST of these instances are contained within an actual letter header block, there are some instances where it can't be, hence the need to specify small-caps. */
 p.letter-header{
 	text-align: center;
 	text-indent: 0;
 	font-variant: small-caps;
 	margin-bottom: 0.5em;
+}
+
+span.letter-header{
+	font-variant: small-caps;
 }
 
 /* these are for the hysterical letters in 6-16 */
@@ -86,13 +78,8 @@ aside p.explanatory{
 	font-style: italic;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
-}
-
-/* This is to match unusual but consistently used reverse indent of abstract passages in the page scans */
-p.abstract,
-div.abstract p{
 	margin-left: 1em;
-	text-indent: -1em;
+	margin-right: 1em;
 }
 
 .abstract em,
@@ -100,6 +87,7 @@ div.abstract p{
 	font-style: normal;
 }
 
+div.abstract + p,
 p.abstract + p{
 	text-indent: 0;
 }
@@ -164,13 +152,6 @@ footer{
 	margin-top: 1em;
 	text-align: initial;
 	text-indent: 0;
-}
-
-/* This is to match unusual but consistently used reverse indent of postscripts in the page scans */
-p[epub|type~="z3998:postscript"],
-[epub|type~="z3998:postscript"] p{
-	margin-left: 1em;
-	text-indent: -1em;
 }
 
 [epub|type~="z3998:poem"] p,
@@ -280,7 +261,6 @@ td{
 	text-align: center;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
-	font-style: italic;
 }
 
 #conclusion blockquote:nth-of-type(2) p{
