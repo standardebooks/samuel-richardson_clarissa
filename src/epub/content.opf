@@ -661,22 +661,12 @@
 		<item href="text/preface.xhtml" id="preface.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/volume-1.xhtml" id="volume-1.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/volume-2.xhtml" id="volume-2.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/volume-3.xhtml" id="volume-3.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/volume-4.xhtml" id="volume-4.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/volume-5.xhtml" id="volume-5.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/volume-6.xhtml" id="volume-6.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/volume-7.xhtml" id="volume-7.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/volume-8.xhtml" id="volume-8.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/volume-9.xhtml" id="volume-9.xhtml" media-type="application/xhtml+xml"/>
 	</manifest>
 	<spine>
 		<itemref idref="titlepage.xhtml"/>
 		<itemref idref="imprint.xhtml"/>
 		<itemref idref="preface.xhtml"/>
 		<itemref idref="halftitle.xhtml"/>
-		<itemref idref="volume-1.xhtml"/>
 		<itemref idref="chapter-1-1.xhtml"/>
 		<itemref idref="chapter-1-2.xhtml"/>
 		<itemref idref="chapter-1-3.xhtml"/>
@@ -721,7 +711,6 @@
 		<itemref idref="chapter-1-42.xhtml"/>
 		<itemref idref="chapter-1-43.xhtml"/>
 		<itemref idref="chapter-1-44.xhtml"/>
-		<itemref idref="volume-2.xhtml"/>
 		<itemref idref="chapter-2-1.xhtml"/>
 		<itemref idref="chapter-2-2.xhtml"/>
 		<itemref idref="chapter-2-3.xhtml"/>
@@ -770,7 +759,6 @@
 		<itemref idref="chapter-2-46.xhtml"/>
 		<itemref idref="chapter-2-47.xhtml"/>
 		<itemref idref="chapter-2-48.xhtml"/>
-		<itemref idref="volume-3.xhtml"/>
 		<itemref idref="chapter-3-1.xhtml"/>
 		<itemref idref="chapter-3-2.xhtml"/>
 		<itemref idref="chapter-3-3.xhtml"/>
@@ -833,7 +821,6 @@
 		<itemref idref="chapter-3-60.xhtml"/>
 		<itemref idref="chapter-3-61.xhtml"/>
 		<itemref idref="chapter-3-62.xhtml"/>
-		<itemref idref="volume-4.xhtml"/>
 		<itemref idref="chapter-4-1.xhtml"/>
 		<itemref idref="chapter-4-2.xhtml"/>
 		<itemref idref="chapter-4-3.xhtml"/>
@@ -889,7 +876,6 @@
 		<itemref idref="chapter-4-53.xhtml"/>
 		<itemref idref="chapter-4-54.xhtml"/>
 		<itemref idref="chapter-4-55.xhtml"/>
-		<itemref idref="volume-5.xhtml"/>
 		<itemref idref="chapter-5-1.xhtml"/>
 		<itemref idref="chapter-5-2.xhtml"/>
 		<itemref idref="chapter-5-3.xhtml"/>
@@ -926,7 +912,6 @@
 		<itemref idref="chapter-5-34.xhtml"/>
 		<itemref idref="chapter-5-35.xhtml"/>
 		<itemref idref="chapter-5-36.xhtml"/>
-		<itemref idref="volume-6.xhtml"/>
 		<itemref idref="chapter-6-1.xhtml"/>
 		<itemref idref="chapter-6-2.xhtml"/>
 		<itemref idref="chapter-6-3.xhtml"/>
@@ -1000,7 +985,6 @@
 		<itemref idref="chapter-6-71.xhtml"/>
 		<itemref idref="chapter-6-72.xhtml"/>
 		<itemref idref="chapter-6-73.xhtml"/>
-		<itemref idref="volume-7.xhtml"/>
 		<itemref idref="chapter-7-1.xhtml"/>
 		<itemref idref="chapter-7-2.xhtml"/>
 		<itemref idref="chapter-7-3.xhtml"/>
@@ -1086,7 +1070,6 @@
 		<itemref idref="chapter-7-83.xhtml"/>
 		<itemref idref="chapter-7-84.xhtml"/>
 		<itemref idref="chapter-7-85.xhtml"/>
-		<itemref idref="volume-8.xhtml"/>
 		<itemref idref="chapter-8-1.xhtml"/>
 		<itemref idref="chapter-8-2.xhtml"/>
 		<itemref idref="chapter-8-3.xhtml"/>
@@ -1158,7 +1141,6 @@
 		<itemref idref="chapter-8-69.xhtml"/>
 		<itemref idref="chapter-8-70.xhtml"/>
 		<itemref idref="chapter-8-71.xhtml"/>
-		<itemref idref="volume-9.xhtml"/>
 		<itemref idref="chapter-9-1.xhtml"/>
 		<itemref idref="chapter-9-2.xhtml"/>
 		<itemref idref="chapter-9-3.xhtml"/>
