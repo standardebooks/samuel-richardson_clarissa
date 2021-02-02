@@ -71,7 +71,7 @@
 		<meta property="se:production-notes">Be careful with re-running modernize spelling: some words are deliberately hyphenated and should remain so, eg “cor-respondence” in chapter 5-1. / There are a number of unusual typographic devices used for various purposes throughout: I have endeavoured to reproduce these as best I can. For example, in chapter 6-1 and 7-41 I have used ‹ instead of a normal single quote to match a deliberate typographic mark by the author. This also avoids typogrify messing it up. / Do not re-run se renumber endnotes, as there are endnotes within endnotes and these need to be handled manually. / Note the curled single-left quote in the name M‘Donald. This is correct as is.</meta>
 		<meta property="se:word-count">WORDCOUNT</meta>
 		<meta property="se:reading-ease.flesch">READINGEASE</meta>
-		<meta property="se:url.encyclopedia.wikipedia">EBOOKWIKILINK</meta>
+		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Clarissa</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/samuel-richardson_clarissa-harlowe</meta>
 		<dc:creator id="author">Samuel Richardson</dc:creator>
 		<meta property="file-as" refines="#author">Richardson, Samuel</meta>
