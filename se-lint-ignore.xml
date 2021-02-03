@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <se-lint-ignore>
-	<file path="chapter-*.xhtml">
+	<file path="letter-*.xhtml">
 		<ignore>
 			<code>s-023</code>
 			<reason>Use of abbreviated names like Lord M. or Cl. in chapter titles cause spurious titlecasing errors. It's safe to turn this off globally because the only titlecase warnings are these spurious ones.</reason>

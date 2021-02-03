@@ -7,7 +7,6 @@ header{
 	margin: 1em 0 1em 0;
 }
 
-
 /* paras following letters within letters should start left-aligned */
 blockquote blockquote + p{
 	text-indent: 0;
@@ -20,7 +19,6 @@ blockquote blockquote header p{
 
 /* There is a LOT of emphasis in this book, and many types (i, em, q, strong).
 Many such are nested, hence the need for the following selectors */
-
 em strong{
 	font-style: normal;
 }
