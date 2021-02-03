@@ -220,18 +220,6 @@ body [xml|lang]{
 	font-style: normal; /* This avoids character names being italicised within a stage direction */
 }
 
-/* This is for the indices (pointing fingers) in chap 5-20. Thanks to Robin Whittleton for this solution. */
-#chapter-5-20 blockquote blockquote:nth-of-type(1) p{
-	margin-left: 4em;
-	position: relative;
-}
-
-.manicule{
-	position: absolute;
-	left: -3em;
-	text-indent: 0;
-}
-
 table{
 	margin: 1em auto 1em auto;
 }
@@ -240,8 +228,8 @@ td{
 	vertical-align: top;
 }
 
-/* drama-like 'all at once' speech in chapter 2-34 */
-#chapter-2-34 div{
+/* drama-like 'all at once' speech in letter-78 */
+#letter-78 div{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -249,21 +237,21 @@ td{
 	padding-left: 1em;
 }
 
-#chapter-2-34 div p:nth-of-type(1){
+#letter-78 div p:nth-of-type(1){
 	border-right: solid thin;
 	padding-right: 0.5em;
 }
 
-/* this is for chapter 5-30 where Lovelace has in part forged a letter from Miss Howe and has indicated to Belford that he has underscored the parts he has written himself */
+/* this is for letter-239 where Lovelace has in part forged a letter from Miss Howe and has indicated to Belford that he has underscored the parts he has written himself */
 .forged{
 	text-decoration: underline;
 	text-decoration-style: solid;
 }
 
 /* one line paragraph in page source, centered for emphasis, but is not a blockquote */
-#chapter-2-10 div,
-#chapter-7-5 div,
-#chapter-8-16 div{
+#letter-54 div,
+#letter-323 div,
+#letter-419 div{
 	text-align: center;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
@@ -275,13 +263,25 @@ td{
 	font-variant: small-caps;
 }
 
+/* This is for the indices (pointing fingers) in chap 5-20. Thanks to Robin Whittleton for this solution. */
+#letter-229 blockquote blockquote:nth-of-type(1) p{
+	margin-left: 4em;
+	position: relative;
+}
+
+.manicule{
+	position: absolute;
+	left: -3em;
+	text-indent: 0;
+}
+
 /* for plaque on Clarissa's coffin */
-#chapter-8-48 blockquote blockquote:nth-of-type(1) p{
+#letter-451 blockquote blockquote:nth-of-type(1) p{
 	text-align: center;
 	text-indent: 0;
 }
 
-/* for Clarissa's MEDITATIONS in several chapters, eg. 7-46 and 7-81 */
+/* for Clarissa's MEDITATIONS in several letters, eg. 364 and 399 */
 blockquote.meditation p{
 	font-style: italic;
 }
@@ -296,29 +296,27 @@ blockquote.meditation header p:nth-of-type(2){
 	font-variant: none;
 }
 
-/* These are for lists of points in chapters 9-41 and 9-45 to better match the page scans */
-#chapter-9-41 ul,
-#chapter-9-45 ul{
+/* These are for lists of points in letters 515 and 519 to better match the page scans */
+#letter-515 ul,
+#letter-519 ul{
 	list-style-type: none;
 }
 
-#chapter-9-41 li p,
-#chapter-9-45 li p{
+#letter-515 li p,
+#letter-519 li p{
 	text-indent: -1em;
 }
 
-/* These are for a list of Clarissa's activities in chapter 9-55, to better match the layout in the page scans */
-#chapter-9-45 ul,
-#chapter-9-55 ul{
+/* These are for a list of Clarissa's activities in letter 529, to better match the layout in the page scans */
+#letter-529 ul{
 	list-style-type: none;
 }
 
-#chapter-9-45 li,
-#chapter-9-55 li{
+#letter-529 li{
 	margin-top: 0.5em;
 }
 
-#chapter-9-55 li p:first-child{
+#letter-529 li p:first-child{
 	text-align: center;
 	text-indent: 0;
 	margin-bottom: 0.5em;
