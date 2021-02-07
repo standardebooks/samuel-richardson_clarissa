@@ -60,24 +60,23 @@ aside{
 	width: 50%;
 	float: right;
 }
-
+ 
 aside blockquote{
-	margin-top: 0.5em;
+	margin-top: 0;
 }
 
 aside p.explanatory{
 	text-align: initial;
 	text-indent: 2em;
+	margin-bottom: 0;
 }
 /* end torn-up letters */
 
 /* abstracts are short summaries of letters or parts of letters */
 .abstract{
 	font-style: italic;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	margin-left: 1em;
-	margin-right: 1em;
+	margin: 1em;
+	text-indent: 0;
 }
 
 .abstract em,
@@ -96,8 +95,8 @@ strong{
 }
 
 [epub|type~="se:letter.dateline"]{
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 	text-align: right;
 	font-style: italic;
 	font-variant: normal;
@@ -211,8 +210,18 @@ body [xml|lang]{
 	font-style: italic;
 	text-align: center;
 	text-indent: 0;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+[epub|type~="z3998:stage-direction"]::before{
+	content: "(";
+	font-style: normal;
+}
+
+[epub|type~="z3998:stage-direction"]::after{
+	content: ")";
+	font-style: normal;
 }
 
 [epub|type~="z3998:persona"]{
@@ -239,7 +248,7 @@ td{
 
 #letter-78 div p:nth-of-type(1){
 	border-right: solid thin;
-	padding-right: 0.5em;
+	padding-right: 1em;
 }
 
 /* this is for letter-239 where Lovelace has in part forged a letter from Miss Howe and has indicated to Belford that he has underscored the parts he has written himself */
@@ -253,8 +262,8 @@ td{
 #letter-323 div,
 #letter-419 div{
 	text-align: center;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 #conclusion blockquote:nth-of-type(2) p{
@@ -313,11 +322,11 @@ blockquote.meditation header p:nth-of-type(2){
 }
 
 #letter-529 li{
-	margin-top: 0.5em;
+	margin-top: 1em;
 }
 
 #letter-529 li p:first-child{
 	text-align: center;
 	text-indent: 0;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 }
