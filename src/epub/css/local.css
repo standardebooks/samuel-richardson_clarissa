@@ -60,7 +60,7 @@ aside{
 	width: 50%;
 	float: right;
 }
- 
+
 aside blockquote{
 	margin-top: 0;
 }
@@ -206,9 +206,12 @@ body [xml|lang]{
 }
 
 /* these are for drama-like passages */
+p[epub|type~="z3998:stage-direction"]{
+	text-align: center;
+}
+
 [epub|type~="z3998:stage-direction"]{
 	font-style: italic;
-	text-align: center;
 	text-indent: 0;
 	margin-top: 1em;
 	margin-bottom: 1em;
