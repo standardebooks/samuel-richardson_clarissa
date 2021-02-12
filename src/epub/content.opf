@@ -63,6 +63,9 @@
 		<meta id="collection-2" property="belongs-to-collection">The BBC’s 100 greatest British novels (2015)</meta>
 		<meta property="collection-type" refines="#collection-2">set</meta>
 		<meta property="group-position" refines="#collection-2">14</meta>
+		<meta id="collection-3" property="belongs-to-collection">The Telegraph’s Greatest Villains in Literature</meta>
+		<meta property="collection-type" refines="#collection-3">set</meta>
+		<meta property="group-position" refines="#collection-3">6</meta>
 		<dc:description id="description">A beautiful and virtuous young lady is entangled in the snares of a handsome but unscrupulous rake.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
 			&lt;p&gt;&lt;i&gt;Clarissa Harlowe, or The History of a Young Lady&lt;/i&gt; is one of the longest novels in the English language. Written by &lt;a href="https://standardebooks.org/ebooks/samuel-richardson"&gt;Samuel Richardson&lt;/a&gt; over a period of several years and published in 1748, it is composed entirely of letters. Though this may seem daunting, the novel is highly regarded and is considered by many critics as one of the greatest works of English literature, appearing in several lists of the best British novels ever written.&lt;/p&gt;
