@@ -93,7 +93,7 @@
 		<dc:contributor id="artist">Frederick Leighton</dc:contributor>
 		<meta property="file-as" refines="#artist">Leighton, Frederick</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/Frederic_Leighton</meta>
-		<meta property="se:url.authority.nacoaf" refines="#artist">https://id.loc.gov/authorities/names/n80079496</meta>
+		<meta property="se:url.authority.nacoaf" refines="#artist">http://id.loc.gov/authorities/names/n80079496</meta>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
 		<dc:contributor id="transcriber-1">Julie C. Sparks</dc:contributor>
 		<meta property="file-as" refines="#transcriber-1">Sparks, Julie C.</meta>
