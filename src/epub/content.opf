@@ -35,6 +35,7 @@
 		<meta property="file-as" refines="#subtitle">Or, the History of a Young Lady</meta>
 		<meta property="title-type" refines="#subtitle">subtitle</meta>
 		<dc:title id="fulltitle">Clarissa Harlowe, or the History of a Young Lady</dc:title>
+		<meta property="file-as" refines="#fulltitle">Clarissa Harlowe</meta>
 		<meta property="title-type" refines="#fulltitle">extended</meta>
 		<dc:subject id="subject-1">England -- Fiction</dc:subject>
 		<dc:subject id="subject-2">Psychological fiction</dc:subject>
