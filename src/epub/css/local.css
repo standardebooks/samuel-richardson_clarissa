@@ -56,16 +56,17 @@ span.letter-header{
 }
 
 /* these are for the hysterical letters in 6-16 */
-aside{
-	width: 50%;
+blockquote.marginalia{
 	float: right;
+	margin: 0;
+	width: 50%;
 }
 
-aside blockquote{
+blockquote.marginalia blockquote{
 	margin-top: 0;
 }
 
-aside p.explanatory{
+blockquote.marginalia p.explanatory{
 	text-align: initial;
 	text-indent: 2em;
 	margin-bottom: 0;
