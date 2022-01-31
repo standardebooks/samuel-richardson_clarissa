@@ -38,17 +38,17 @@ q strong{
 /* text briefly explaining something about a letter */
 .explanatory{
 	font-style: italic;
+	margin-bottom: 0.5em;
 	text-align: center;
 	text-indent: 0;
-	margin-bottom: 0.5em;
 }
 
 /* Many letters are described by centered all-caps like TO MY UNFORTUNATE SISTER. Note that while MOST of these instances are contained within an actual letter header block, there are some instances where it can't be, hence the need to specify small-caps. */
 p.letter-header{
-	text-align: center;
-	text-indent: 0;
 	font-variant: small-caps;
 	margin-bottom: 0.5em;
+	text-align: center;
+	text-indent: 0;
 }
 
 span.letter-header{
@@ -67,9 +67,9 @@ blockquote.marginalia blockquote{
 }
 
 blockquote.marginalia p.explanatory{
+	margin-bottom: 0;
 	text-align: initial;
 	text-indent: 2em;
-	margin-bottom: 0;
 }
 /* end torn-up letters */
 
@@ -91,16 +91,16 @@ p.abstract + p{
 }
 
 strong{
-	font-weight: normal;
 	font-variant: small-caps;
+	font-weight: normal;
 }
 
 [epub|type~="se:letter.dateline"]{
-	margin-top: 1em;
-	margin-bottom: 1em;
-	text-align: right;
 	font-style: italic;
 	font-variant: normal;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	text-align: right;
 }
 
 [epub|type~="se:letter.dateline"] + p{
@@ -119,8 +119,8 @@ strong{
 }
 
 [epub|type~="z3998:letter"] header{
-	text-align: right;
 	margin-bottom: 0.5em;
+	text-align: right;
 }
 
 footer{
@@ -134,9 +134,9 @@ footer{
 }
 
 [epub|type~="z3998:salutation"]{
+	padding: 0;
 	text-align: initial;
 	text-indent: 0;
-	padding: 0;
 }
 
 [epub|type~="z3998:sender"],
@@ -196,10 +196,10 @@ cite{
 [epub|type~="bridgehead"]{
 	display: inline-block;
 	font-style: italic;
+	font-variant: none;
 	max-width: 60%;
 	text-align: justify;
 	text-indent: 0;
-	font-variant: none;
 }
 
 body [xml|lang]{
@@ -213,9 +213,9 @@ p[epub|type~="z3998:stage-direction"]{
 
 [epub|type~="z3998:stage-direction"]{
 	font-style: italic;
-	text-indent: 0;
-	margin-top: 1em;
 	margin-bottom: 1em;
+	margin-top: 1em;
+	text-indent: 0;
 }
 
 [epub|type~="z3998:stage-direction"]::before{
@@ -229,8 +229,8 @@ p[epub|type~="z3998:stage-direction"]{
 }
 
 [epub|type~="z3998:persona"]{
-	font-variant: all-small-caps;
 	font-style: normal; /* This avoids character names being italicised within a stage direction */
+	font-variant: all-small-caps;
 }
 
 table{
@@ -243,10 +243,10 @@ td{
 
 /* drama-like 'all at once' speech in letter-78 */
 #letter-78 div{
+	align-items: center;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;
 	padding-left: 1em;
 }
 
@@ -265,15 +265,15 @@ td{
 #letter-54 div,
 #letter-323 div,
 #letter-419 div{
-	text-align: center;
-	margin-top: 1em;
 	margin-bottom: 1em;
+	margin-top: 1em;
+	text-align: center;
 }
 
 #conclusion blockquote:nth-of-type(2) p{
+	font-variant: small-caps;
 	text-align: center;
 	text-indent: 0;
-	font-variant: small-caps;
 }
 
 /* This is for the indices (pointing fingers) in chap 5-20. Thanks to Robin Whittleton for this solution. */
@@ -283,8 +283,8 @@ td{
 }
 
 .manicule{
-	position: absolute;
 	left: -3em;
+	position: absolute;
 	text-indent: 0;
 }
 
@@ -300,9 +300,9 @@ blockquote.meditation p{
 }
 
 blockquote.meditation header p{
-	text-indent: 0;
-	text-align: center;
 	font-style: normal;
+	text-align: center;
+	text-indent: 0;
 }
 
 blockquote.meditation header p:nth-of-type(2){
@@ -330,7 +330,7 @@ blockquote.meditation header p:nth-of-type(2){
 }
 
 #letter-529 li p:first-child{
+	margin-bottom: 1em;
 	text-align: center;
 	text-indent: 0;
-	margin-bottom: 1em;
 }
