@@ -6,16 +6,4 @@
 			<reason>Use of abbreviated names like Lord M. or Cl. in chapter titles cause spurious titlecasing errors. It's safe to turn this off globally because the only titlecase warnings are these spurious ones.</reason>
 		</ignore>
 	</file>
-	<file path="*.xhtml">
-		<ignore>
-			<code>t-004</code>
-			<reason>The name M‘Donald is correctly expressed that way, with a left single-quote after the M. There are no other instances of ‘ missing ’.</reason>
-		</ignore>
-	</file>
-	<file path="*.xhtml">
-		<ignore>
-			<code>t-028</code>
-			<reason>The name M‘Donald is correctly expressed that way, with a left single-quote after the M. There are no other instances of mis-curled quotation marks.</reason>
-		</ignore>
-	</file>
 </se-lint-ignore>
