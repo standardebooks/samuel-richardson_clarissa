@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-		<dc:identifier id="uid">url:https://standardebooks.org/ebooks/samuel-richardson/clarissa-harlowe</dc:identifier>
+		<dc:identifier id="uid">url:https://standardebooks.org/ebooks/samuel-richardson/clarissa</dc:identifier>
 		<dc:date>2021-02-11T20:41:19Z</dc:date>
 		<meta property="dcterms:modified">2021-02-11T20:41:19Z</meta>
 		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
@@ -26,14 +26,14 @@
 		<meta property="schema:accessibilityHazard">none</meta>
 		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.1 Level AA.</meta>
 		<link href="onix.xml" media-type="application/xml" properties="onix" rel="record"/>
-		<dc:title id="title">Clarissa Harlowe</dc:title>
-		<meta property="file-as" refines="#title">Clarissa Harlowe</meta>
+		<dc:title id="title">Clarissa</dc:title>
+		<meta property="file-as" refines="#title">Clarissa</meta>
 		<meta property="title-type" refines="#title">main</meta>
 		<dc:title id="subtitle">Or, the History of a Young Lady</dc:title>
 		<meta property="file-as" refines="#subtitle">Or, the History of a Young Lady</meta>
 		<meta property="title-type" refines="#subtitle">subtitle</meta>
-		<dc:title id="fulltitle">Clarissa Harlowe, or the History of a Young Lady</dc:title>
-		<meta property="file-as" refines="#fulltitle">Clarissa Harlowe</meta>
+		<dc:title id="fulltitle">Clarissa, or the History of a Young Lady</dc:title>
+		<meta property="file-as" refines="#fulltitle">Clarissa</meta>
 		<meta property="title-type" refines="#fulltitle">extended</meta>
 		<dc:subject id="subject-1">England -- Fiction</dc:subject>
 		<dc:subject id="subject-2">Psychological fiction</dc:subject>
@@ -68,8 +68,8 @@
 		<meta property="group-position" refines="#collection-3">6</meta>
 		<dc:description id="description">A beautiful and virtuous young lady is entangled in the snares of a handsome but unscrupulous rake.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			&lt;p&gt;&lt;i&gt;Clarissa Harlowe, or The History of a Young Lady&lt;/i&gt; is one of the longest novels in the English language. Written by &lt;a href="https://standardebooks.org/ebooks/samuel-richardson"&gt;Samuel Richardson&lt;/a&gt; over a period of several years and published in 1748, it is composed entirely of letters. Though this may seem daunting, the novel is highly regarded and is considered by many critics as one of the greatest works of English literature, appearing in several lists of the best British novels ever written.&lt;/p&gt;
-			&lt;p&gt;The novel tells the story of young Clarissa, eighteen years of age at the start of the novel. She is generally regarded by her family, neighbors, and friends as the most virtuous and kind young woman they know. But she is drawn into correspondence with Richard Lovelace, a well-born, rich young man regarded as something of a rake, when she attempts to reconcile a dispute between Lovelace and her rash brother. Lovelace, imagining this indicates her love for him, carries out a series of strategems which result in him essentially abducting her from her family, from whom Clarissa then becomes estranged.&lt;/p&gt;
+			&lt;p&gt;&lt;i&gt;Clarissa, or The History of a Young Lady&lt;/i&gt; is one of the longest novels in the English language. Written by &lt;a href="https://standardebooks.org/ebooks/samuel-richardson"&gt;Samuel Richardson&lt;/a&gt; over a period of several years and published in 1748, it is composed entirely of letters. Though this may seem daunting, the novel is highly regarded and is considered by many critics as one of the greatest works of English literature, appearing in several lists of the best British novels ever written.&lt;/p&gt;
+			&lt;p&gt;The novel tells the story of the young Clarissa Harlowe, eighteen years of age at the start of the novel. She is generally regarded by her family, neighbors, and friends as the most virtuous and kind young woman they know. But she is drawn into correspondence with Richard Lovelace, a well-born, rich young man regarded as something of a rake, when she attempts to reconcile a dispute between Lovelace and her rash brother. Lovelace, imagining this indicates her love for him, carries out a series of strategems which result in him essentially abducting her from her family, from whom Clarissa then becomes estranged.&lt;/p&gt;
 			&lt;p&gt;Much of the correspondence consists of the letters between Clarissa and her close friend Anna Howe, and between Lovelace and his friend Jack Belford, to whom he confesses all of his strategems and “inventions” in his assault on Clarissa’s honor.&lt;/p&gt;
 			&lt;p&gt;The novel is thus a fascinating study of human nature. Much of Lovelace’s actions and attitudes towards women are regrettably only too familiar to modern readers. And while Clarissa herself may be a little too good to be true, nevertheless she is shown as having some flaws which lead to a tragic outcome.&lt;/p&gt;
 			&lt;p&gt;This Standard Ebooks edition is based on the 9-volume Chapman and Hall edition of 1902.&lt;/p&gt;
@@ -81,7 +81,7 @@
 		<meta property="se:word-count">940098</meta>
 		<meta property="se:reading-ease.flesch">66.57</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Clarissa</meta>
-		<meta property="se:url.vcs.github">https://github.com/standardebooks/samuel-richardson_clarissa-harlowe</meta>
+		<meta property="se:url.vcs.github">https://github.com/standardebooks/samuel-richardson_clarissa</meta>
 		<dc:creator id="author">Samuel Richardson</dc:creator>
 		<meta property="file-as" refines="#author">Richardson, Samuel</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/Samuel_Richardson</meta>
