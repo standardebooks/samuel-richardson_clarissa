@@ -38,7 +38,7 @@ q strong{
 /* text briefly explaining something about a letter */
 .explanatory{
 	font-style: italic;
-	margin-bottom: 0.5em;
+	margin-bottom: .5em;
 	text-align: center;
 	text-indent: 0;
 }
@@ -46,7 +46,7 @@ q strong{
 /* Many letters are described by centered all-caps like TO MY UNFORTUNATE SISTER. Note that while MOST of these instances are contained within an actual letter header block, there are some instances where it can't be, hence the need to specify small-caps. */
 p.letter-header{
 	font-variant: small-caps;
-	margin-bottom: 0.5em;
+	margin-bottom: .5em;
 	text-align: center;
 	text-indent: 0;
 }
@@ -119,7 +119,7 @@ strong{
 }
 
 [epub|type~="z3998:letter"] header{
-	margin-bottom: 0.5em;
+	margin-bottom: .5em;
 	text-align: right;
 }
 
