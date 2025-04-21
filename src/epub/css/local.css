@@ -241,6 +241,10 @@ td{
 	vertical-align: top;
 }
 
+td:last-child{
+	white-space: nowrap;
+}
+
 /* drama-like 'all at once' speech in letter-78 */
 #letter-78 div{
 	align-items: center;
