@@ -193,7 +193,7 @@ cite{
 	font-variant: small-caps;
 }
 
-[epub|type~="bridgehead"]{
+[epub|type~="se:bridgehead"]{
 	display: inline-block;
 	font-style: italic;
 	font-variant: none;
