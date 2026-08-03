@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0 rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 		<dc:identifier id="uid">https://standardebooks.org/ebooks/samuel-richardson/clarissa</dc:identifier>
 		<dc:date>2021-02-11T20:41:19Z</dc:date>
@@ -71,14 +71,14 @@
 		<meta id="collection-4" property="belongs-to-collection">The Guardian’s 100 Greatest Novels of All Time (2003)</meta>
 		<meta property="collection-type" refines="#collection-4">set</meta>
 		<meta property="group-position" refines="#collection-4">6</meta>
-		<dc:description id="description">A beautiful and virtuous young lady is entangled in the snares of a handsome but unscrupulous rake.</dc:description>
-		<meta id="long-description" property="se:long-description" refines="#description">
+		<dc:abstract>A beautiful and virtuous young lady is entangled in the snares of a handsome but unscrupulous rake.</dc:abstract>
+		<dc:description>
 			&lt;p&gt;&lt;i&gt;Clarissa, or The History of a Young Lady&lt;/i&gt; is one of the longest novels in the English language. Written by &lt;a href="https://standardebooks.org/ebooks/samuel-richardson"&gt;Samuel Richardson&lt;/a&gt; over a period of several years and published in 1748, it is composed entirely of letters. Though this may seem daunting, the novel is highly regarded and is considered by many critics as one of the greatest works of English literature, appearing in several lists of the best British novels ever written.&lt;/p&gt;
 			&lt;p&gt;The novel tells the story of the young Clarissa Harlowe, eighteen years of age at the start of the novel. She is generally regarded by her family, neighbors, and friends as the most virtuous and kind young woman they know. But she is drawn into correspondence with Richard Lovelace, a well-born, rich young man regarded as something of a rake, when she attempts to reconcile a dispute between Lovelace and her rash brother. Lovelace, imagining this indicates her love for him, carries out a series of stratagems which result in him essentially abducting her from her family, from whom Clarissa then becomes estranged.&lt;/p&gt;
 			&lt;p&gt;Much of the correspondence consists of the letters between Clarissa and her close friend Anna Howe, and between Lovelace and his friend Jack Belford, to whom he confesses all of his stratagems and “inventions” in his assault on Clarissa’s honor.&lt;/p&gt;
 			&lt;p&gt;The novel is thus a fascinating study of human nature. Much of Lovelace’s actions and attitudes towards women are regrettably only too familiar to modern readers. And while Clarissa herself may be a little too good to be true, nevertheless she is shown as having some flaws which lead to a tragic outcome.&lt;/p&gt;
 			&lt;p&gt;This Standard Ebooks edition is based on the 9-volume Chapman and Hall edition of 1902.&lt;/p&gt;
-		</meta>
+		</dc:description>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/9296</dc:source>
 		<dc:source>https://catalog.hathitrust.org/Record/100326038</dc:source>
