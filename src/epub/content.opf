@@ -37,13 +37,13 @@
 		<dc:title id="fulltitle">Clarissa, or the History of a Young Lady</dc:title>
 		<meta property="file-as" refines="#fulltitle">Clarissa</meta>
 		<meta property="title-type" refines="#fulltitle">expanded</meta>
-		<dc:subject id="subject-1">England -- Fiction</dc:subject>
+		<dc:subject id="subject-1">England--Fiction</dc:subject>
 		<dc:subject id="subject-2">Psychological fiction</dc:subject>
 		<dc:subject id="subject-3">Epistolary fiction</dc:subject>
-		<dc:subject id="subject-4">Conflict of generations -- Fiction</dc:subject>
-		<dc:subject id="subject-5">Kidnapping victims -- Fiction</dc:subject>
-		<dc:subject id="subject-6">Young women -- Crimes against -- Fiction</dc:subject>
-		<dc:subject id="subject-7">Rape victims -- Fiction</dc:subject>
+		<dc:subject id="subject-4">Conflict of generations--Fiction</dc:subject>
+		<dc:subject id="subject-5">Kidnapping victims--Fiction</dc:subject>
+		<dc:subject id="subject-6">Young women--Crimes against--Fiction</dc:subject>
+		<dc:subject id="subject-7">Rape victims--Fiction</dc:subject>
 		<meta property="authority" refines="#subject-1">LCSH</meta>
 		<meta property="term" refines="#subject-1">Unknown</meta>
 		<meta property="authority" refines="#subject-2">LCSH</meta>
