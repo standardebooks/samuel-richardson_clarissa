@@ -107,6 +107,7 @@
 		<dc:contributor id="transcriber-2">David Widger</dc:contributor>
 		<meta property="file-as" refines="#transcriber-2">Widger, David</meta>
 		<link href="https://id.loc.gov/authorities/names/no2011017869.html" refines="#transcriber-2" rel="schema:sameAs"/>
+		<link href="https://www.gutenberg.net.au/widger/home.html" refines="#transcriber-2" rel="schema:url"/>
 		<meta property="role" refines="#transcriber-2" scheme="marc:relators">trc</meta>
 		<dc:contributor id="producer-1">David Grigg</dc:contributor>
 		<meta property="file-as" refines="#producer-1">Grigg, David</meta>
@@ -124,7 +125,7 @@
 		<meta property="role" refines="#producer-2" scheme="marc:relators">mrk</meta>
 		<dc:contributor id="producer-3">Robin Whittleton</dc:contributor>
 		<meta property="file-as" refines="#producer-3">Whittleton, Robin</meta>
-		<link href="http://www.robinwhittleton.com/" refines="#producer-3" rel="schema:url"/>
+		<link href="https://www.robinwhittleton.com/" refines="#producer-3" rel="schema:url"/>
 		<meta property="role" refines="#producer-3" scheme="marc:relators">pfr</meta>
 	</metadata>
 	<manifest>
