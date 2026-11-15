@@ -246,12 +246,14 @@ td:last-child{
 }
 
 /* drama-like 'all at once' speech in letter-78 */
-#letter-78 div{
-	align-items: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	padding-left: 1em;
+@supports(display: flex){
+	#letter-78 div{
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		padding-left: 1em;
+	}
 }
 
 #letter-78 div p:nth-of-type(1){
